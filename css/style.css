@@ -1,0 +1,302 @@
+:root{
+    --primary-color : #794607;
+    --secondary-color : #efa223;
+    --tartiary-color : #e6a85c;
+    --last-color : #f3f169;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: var(--last-color);
+    background: var(--primary-color);
+}
+  
+::selection {
+    color: var(--last-color);
+    background: var(--primary-color);
+}
+  
+/* width */
+::-webkit-scrollbar {
+    width: 9px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1);
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--last-color);
+    border-radius: 15px;
+}
+
+body{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: var(--tartiary-color);
+    padding: 20px 10px;
+    justify-content: space-around;
+    color: var(--primary-color);
+}
+.nav-content .nav-link{
+    text-decoration: none;
+    padding: 20px 20px;
+    color: var(--primary-color);
+}
+.nav-content .nav-link.active{
+    background-color: var(--secondary-color);
+}
+.nav-content .nav-link:hover{
+    background-color: var(--secondary-color);
+}
+#banner{
+    width: 100%;
+    height: 600px;
+    background-image: url('../img/shop.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+#banner .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#banner .content{
+	position: relative;
+	width: fit-content;
+	text-align: center;
+	padding: 0 10px;
+    border-radius: 15px;
+	box-shadow: 0 0 20px 3px rgba(0,0,0,0.4);
+}
+#about{
+    margin: 100px 100px 0 170px;
+}
+#menu{
+    margin: 0 100px 100px 100px;
+}
+#about-content{
+    width: 400px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+h6{
+    color: var(--last-color);
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.title{
+    width: 100%;
+    margin: 0;
+}
+#content button{
+    width: fit-content;
+    border-radius: 15px;
+    border: 0;
+    background-color: var(--last-color);
+    padding: 5px 10px;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+#content button:hover{
+    box-shadow: 0 0 10px var(--primary-color);
+}
+#menu-content{
+    padding: 0 0 0 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row #title{
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#menu-item img{
+    border-radius: 15px;
+}
+#menu-item .card{
+    /* border: 1px solid var(--primary-color); */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 20px;
+    box-shadow: 0 0 20px var(--primary-color);
+}
+#contact{
+    background-color: rgb(238, 197, 63);
+}
+#contact #contact-info{
+    margin: 0 100px;
+}
+#contact #contact-info .info{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    /* border: 1px solid #000; */
+}
+#contact .input-item{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #000; */
+}
+#contact .input-item input{
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border: 2px dotted var(--last-color);
+    background-color: rgb(238, 197, 63);
+    color: var(--primary-color);
+}
+#contact .input-item input:hover{
+    box-shadow: 0 0 10px var(--primary-color);
+}
+#contact .input-item button{
+    width: 100%;
+    border-radius: 0;
+    padding: 10px 0;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+#contact .input-item button:hover{
+    box-shadow: 0 0 10px var(--primary-color);
+}
+#contact .contact{
+    margin: 0 100px;
+}
+#contact .map{
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px var(--primary-color);
+}
+#contact iframe{
+    width: 100%;
+    height: 100%;
+}
+#footer-item{
+    margin: 40px 100px;
+}
+footer h4{
+    padding-bottom: 20px;
+}
+#footer-item .items{
+    display: flex;
+    flex-direction: column;
+}
+#footer-item .items i{
+    padding-right: 7px;
+}
+#footer-item a{
+    width: fit-content;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+#footer-item a:hover{
+    color: var(--last-color);
+}
+#social{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 100px;
+}
+#social input{
+    border: 2px dotted var(--last-color);
+    background-color: var(--secondary-color);
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 10px 0;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+#social input:hover{
+    background-color: var(--last-color);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+#social button{
+    width: fit-content;
+    background-color: var(--last-color);
+    border: 0;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+#social button:hover{
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+footer p{
+	background-color: rgb(238, 197, 63);
+	text-align:center;
+	margin: 0;
+	padding: 10px 0;
+}
+@media only screen and (max-width:992px) {
+    nav{
+        padding: 15px 10px;
+    }
+    .nav-content .nav-link{
+        padding: 15px 5px;
+    }
+    #content{
+        margin-top: 50px;
+    }
+    #banner{
+        height: 400px;
+    }
+    #about img, #menu img{
+        width: 100%;
+    }
+    #about-content, #menu-content{
+        padding: 10px 20px;
+    }
+    #about, #menu{
+        margin: 0;
+    }
+    #menu-item .card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #contact #contact-info{
+        margin: 0 20px;
+    }
+    footer #footer-item{
+        margin: 0;
+        padding-left: 20px;
+    }
+    #social{
+        margin: 0;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+}
+
